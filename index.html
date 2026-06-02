@@ -22,6 +22,12 @@
 
 <h2>Catálogo de produtos</h2>
 
+<div class="filtro-area">
+  <button id="filtroBtn" onclick="alternarFiltro()">
+    Mostrar disponíveis A-Z
+  </button>
+</div>
+
 <section class="produtos">
 
 <div class="card"><div class="emoji">🔥</div><div class="nome">5-Amino</div><div class="info">10 MG • Metabolismo</div><div class="preco">$ 0.00</div><div class="indisponivel">Indisponível</div></div>
@@ -145,6 +151,40 @@
 <a class="whatsapp" href="https://wa.me/14074092312" target="_blank">
   Falar no WhatsApp
 </a>
+
+<script>
+let mostrandoSomenteDisponiveis = false;
+
+function alternarFiltro() {
+  const areaProdutos = document.querySelector(".produtos");
+  const cards = Array.from(areaProdutos.querySelectorAll(".card"));
+  const botao = document.getElementById("filtroBtn");
+
+  mostrandoSomenteDisponiveis = !mostrandoSomenteDisponiveis;
+
+  cards.sort((a, b) => {
+    const nomeA = a.querySelector(".nome").textContent.trim().toLowerCase();
+    const nomeB = b.querySelector(".nome").textContent.trim().toLowerCase();
+    return nomeA.localeCompare(nomeB);
+  });
+
+  cards.forEach(card => {
+    const estaDisponivel = card.querySelector(".disponivel");
+
+    if (mostrandoSomenteDisponiveis) {
+      card.style.display = estaDisponivel ? "block" : "none";
+    } else {
+      card.style.display = "block";
+    }
+
+    areaProdutos.appendChild(card);
+  });
+
+  botao.textContent = mostrandoSomenteDisponiveis
+    ? "Mostrar todos A-Z"
+    : "Mostrar disponíveis A-Z";
+}
+</script>
 
 </body>
 </html>
