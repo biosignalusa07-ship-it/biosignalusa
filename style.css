@@ -58,6 +58,27 @@ h2 {
   text-align: center;
 }
 
+.filtro-area {
+  text-align: center;
+  margin: 10px 0 25px;
+}
+
+#filtroBtn {
+  background: #d4af37;
+  color: #000;
+  border: none;
+  border-radius: 18px;
+  padding: 14px 24px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.55);
+}
+
+#filtroBtn:hover {
+  background: #f0c94a;
+}
+
 .produtos {
   padding: 10px 15px;
   max-width: 850px;
@@ -102,19 +123,19 @@ h2 {
 
 /* DISPONÍVEL EM VERDE */
 .disponivel {
-  color: #00d26a;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 17px;
+  color: #00d26a !important;
+  font-weight: bold !important;
+  text-transform: uppercase !important;
+  font-size: 17px !important;
 }
 
 /* INDISPONÍVEL EM VERMELHO */
 .indisponivel,
 .espera {
-  color: #ff3b3b;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 17px;
+  color: #ff3b3b !important;
+  font-weight: bold !important;
+  text-transform: uppercase !important;
+  font-size: 17px !important;
 }
 
 footer {
