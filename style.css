@@ -114,3 +114,15 @@ footer {
   text-decoration: none;
   box-shadow: 0 0 25px rgba(212, 175, 55, 0.7);
 }
+.disponivel {
+  color: #00d26a;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.indisponivel,
+.espera {
+  color: #ff3b3b;
+  font-weight: bold;
+  text-transform: uppercase;
+}
