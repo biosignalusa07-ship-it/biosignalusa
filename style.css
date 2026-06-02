@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: radial-gradient(circle at top, #2b2108, #030303 45%);
+  color: #fff;
+  padding-bottom: 90px;
+}
+
+header {
+  text-align: center;
+  padding: 35px 20px 20px;
+}
+
+.logo {
+  width: 170px;
+  max-width: 80%;
+  border-radius: 50%;
+  box-shadow: 0 0 35px #d4af37;
+}
+
+h1 {
+  color: #d4af37;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+header p {
+  color: #c9b26b;
+}
+
+.categorias {
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+  overflow-x: auto;
+}
+
+.categorias button {
+  background: #111;
+  color: #d4af37;
+  border: 1px solid #d4af37;
+  border-radius: 16px;
+  padding: 12px 18px;
+  font-weight: bold;
+}
+
+h2 {
+  color: #d4af37;
+  padding: 0 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.produtos {
+  padding: 10px 15px;
+}
+
+.card {
+  background: linear-gradient(145deg, #111, #050505);
+  border: 1px solid #8c6b19;
+  border-radius: 22px;
+  padding: 22px;
+  margin-bottom: 18px;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.15);
+}
+
+.card h3 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.card p {
+  color: #d4af37;
+  font-size: 16px;
+}
+
+.card strong {
+  display: block;
+  color: #d4af37;
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.disponivel {
+  color: #00d26a;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.espera {
+  color: #ff4d4d;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+footer {
+  text-align: center;
+  color: #c9b26b;
+  font-size: 13px;
+  padding: 30px 20px;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 18px;
+  left: 18px;
+  right: 18px;
+  background: #d4af37;
+  color: #000;
+  text-align: center;
+  padding: 18px;
+  border-radius: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.7);
+}
