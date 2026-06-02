@@ -16,23 +16,29 @@ header {
   max-width: 80%;
   border-radius: 50%;
   box-shadow: 0 0 35px #d4af37;
+  display: block;
+  margin: 0 auto;
 }
 
 h1 {
   color: #d4af37;
   letter-spacing: 2px;
   margin-bottom: 5px;
+  text-align: center;
 }
 
 header p {
   color: #c9b26b;
+  text-align: center;
 }
 
 .categorias {
   display: flex;
+  justify-content: center;
   gap: 10px;
   padding: 15px;
   overflow-x: auto;
+  flex-wrap: wrap;
 }
 
 .categorias button {
@@ -49,10 +55,13 @@ h2 {
   padding: 0 18px;
   text-transform: uppercase;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 .produtos {
   padding: 10px 15px;
+  max-width: 850px;
+  margin: 0 auto;
 }
 
 .card {
@@ -62,35 +71,50 @@ h2 {
   padding: 22px;
   margin-bottom: 18px;
   box-shadow: 0 0 20px rgba(212, 175, 55, 0.15);
+  text-align: center;
 }
 
-.card h3 {
+.emoji {
+  font-size: 34px;
+  margin-bottom: 8px;
+}
+
+.nome {
   font-size: 28px;
-  margin: 0;
+  margin: 0 0 8px;
+  color: #fff;
+  font-weight: bold;
 }
 
-.card p {
+.info {
   color: #d4af37;
   font-size: 16px;
+  margin-bottom: 10px;
 }
 
-.card strong {
+.preco {
   display: block;
   color: #d4af37;
   font-size: 30px;
   margin: 10px 0;
+  font-weight: bold;
 }
 
+/* DISPONÍVEL EM VERDE */
 .disponivel {
   color: #00d26a;
   font-weight: bold;
   text-transform: uppercase;
+  font-size: 17px;
 }
 
+/* INDISPONÍVEL EM VERMELHO */
+.indisponivel,
 .espera {
-  color: #ff4d4d;
+  color: #ff3b3b;
   font-weight: bold;
   text-transform: uppercase;
+  font-size: 17px;
 }
 
 footer {
@@ -113,16 +137,19 @@ footer {
   font-weight: bold;
   text-decoration: none;
   box-shadow: 0 0 25px rgba(212, 175, 55, 0.7);
-}
-.disponivel {
-  color: #00d26a;
-  font-weight: bold;
-  text-transform: uppercase;
+  z-index: 999;
 }
 
-.indisponivel,
-.espera {
-  color: #ff3b3b;
-  font-weight: bold;
-  text-transform: uppercase;
+@media (max-width: 600px) {
+  .nome {
+    font-size: 24px;
+  }
+
+  .preco {
+    font-size: 26px;
+  }
+
+  .card {
+    padding: 20px 15px;
+  }
 }
