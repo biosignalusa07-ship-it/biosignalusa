@@ -3,9 +3,10 @@ body {
   font-family: Arial, sans-serif;
   background: radial-gradient(circle at top, #2b2108, #030303 45%);
   color: #fff;
-  padding-bottom: 90px;
+  padding-bottom: 95px;
 }
 
+/* TOPO */
 header {
   text-align: center;
   padding: 35px 20px 20px;
@@ -23,15 +24,20 @@ header {
 h1 {
   color: #d4af37;
   letter-spacing: 2px;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   text-align: center;
 }
 
 header p {
   color: #c9b26b;
   text-align: center;
+  max-width: 850px;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-size: 15px;
 }
 
+/* CATEGORIAS */
 .categorias {
   display: flex;
   justify-content: center;
@@ -50,6 +56,7 @@ header p {
   font-weight: bold;
 }
 
+/* TÍTULO */
 h2 {
   color: #d4af37;
   padding: 0 18px;
@@ -58,6 +65,7 @@ h2 {
   text-align: center;
 }
 
+/* BOTÃO FILTRO */
 .filtro-area {
   text-align: center;
   margin: 10px 0 25px;
@@ -79,6 +87,7 @@ h2 {
   background: #f0c94a;
 }
 
+/* PRODUTOS */
 .produtos {
   padding: 10px 15px;
   max-width: 850px;
@@ -138,13 +147,24 @@ h2 {
   font-size: 17px !important;
 }
 
+/* RODAPÉ */
 footer {
   text-align: center;
   color: #c9b26b;
   font-size: 13px;
-  padding: 30px 20px;
+  padding: 35px 20px 120px;
 }
 
+.envio-info {
+  color: #d4af37;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.5;
+  max-width: 760px;
+  margin: 0 auto 18px;
+}
+
+/* BOTÃO WHATSAPP FIXO */
 .whatsapp {
   position: fixed;
   bottom: 18px;
@@ -161,7 +181,20 @@ footer {
   z-index: 999;
 }
 
+/* CELULAR */
 @media (max-width: 600px) {
+  .logo {
+    width: 150px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  header p {
+    font-size: 14px;
+  }
+
   .nome {
     font-size: 24px;
   }
@@ -172,5 +205,9 @@ footer {
 
   .card {
     padding: 20px 15px;
+  }
+
+  .envio-info {
+    font-size: 16px;
   }
 }
